@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>doc-page:not(:defined){visibility:hidden}
+  @keyframes noop{from{opacity:1}to{opacity:1}}
+</style>
+</helmet>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" margin="0.85in" hint-size="100%,1100px">
+
+  <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:22px; border-bottom:2px solid #16211D; margin-bottom:34px;">
+    <div style="display:flex; align-items:center; gap:10px;">
+      <div style="display:flex; gap:4px;">
+        <span style="width:26px;height:26px;border-radius:7px;background:#5FB9AC;color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px 'Figtree',sans-serif;">M</span>
+        <span style="width:26px;height:26px;border-radius:7px;background:#0E8C7A;color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px 'Figtree',sans-serif;">D</span>
+        <span style="width:26px;height:26px;border-radius:7px;background:#F5A623;color:#fff;display:flex;align-items:center;justify-content:center;font:800 13px 'Figtree',sans-serif;">S</span>
+      </div>
+      <span style="font:700 17px 'Figtree',sans-serif; letter-spacing:-0.01em; color:#16211D;">My Debt Sort</span>
+    </div>
+    <span style="font:600 11px 'Figtree',sans-serif; letter-spacing:.12em; text-transform:uppercase; color:#5C6C66;">Brand &amp; Visual Spec &nbsp;·&nbsp; Final</span>
+  </div>
+
+  <h1 style="font-family:'Newsreader',serif; font-weight:600; font-size:38px; letter-spacing:-0.02em; margin:0 0 8px; color:#16211D;">Colour &amp; Type Specification</h1>
+  <p style="font:400 16px/1.6 'Figtree',sans-serif; color:#5C6C66; margin:0 0 36px; max-width:520px;">The approved final direction: the Calm Vibrant colour palette, paired with the Warm Vibrant layout, copy and typography. This document is the single reference for engineering and design.</p>
+
+  <h2 style="font-family:'Newsreare',serif; font-family:'Newsreader',serif; font-weight:600; font-size:22px; letter-spacing:-0.01em; margin:0 0 4px; color:#16211D;">1 · Colour palette</h2>
+  <p style="font:400 14px/1.6 'Figtree',sans-serif; color:#5C6C66; margin:0 0 16px;">Solid white page background throughout. Teal is the primary action colour; amber is the secondary / highlight colour. Light tints are for soft chip and badge backgrounds only - never large fields.</p>
+
+  <table style="width:100%; border-collapse:collapse; margin-bottom:8px; font:400 13.5px/1.5 'Figtree',sans-serif;">
+    <thead>
+      <tr style="background:#16211D;">
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em; border-radius:6px 0 0 0;">Swatch</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em;">Name</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em;">Hex</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em;">RGB</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em; border-radius:0 6px 0 0;">Usage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#0E8C7A; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Sort Teal - Primary</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#0E8C7A</td><td style="padding:10px 8px; color:#5C6C66;">14, 140, 122</td><td style="padding:10px 8px; color:#5C6C66;">Primary buttons, links, nav CTA, "D" logo block, section backgrounds</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2; background:#FAFBFA;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#5FB9AC; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Sort Teal - Light</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#5FB9AC</td><td style="padding:10px 8px; color:#5C6C66;">95, 185, 172</td><td style="padding:10px 8px; color:#5C6C66;">"M" logo block, secondary accents</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#0B6F60; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Sort Teal - Dark (text)</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#0B6F60</td><td style="padding:10px 8px; color:#5C6C66;">11, 111, 96</td><td style="padding:10px 8px; color:#5C6C66;">Dark text on light-teal tints (badges, small labels)</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2; background:#FAFBFA;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#F5A623; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Amber - Accent</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#F5A623</td><td style="padding:10px 8px; color:#5C6C66;">245, 166, 35</td><td style="padding:10px 8px; color:#5C6C66;">"S" logo block, star ratings, secondary CTAs, highlight labels</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#16211D; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Ink</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#16211D</td><td style="padding:10px 8px; color:#5C6C66;">22, 33, 29</td><td style="padding:10px 8px; color:#5C6C66;">Body copy, headings, footer background</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2; background:#FAFBFA;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#5C6C66; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Muted</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#5C6C66</td><td style="padding:10px 8px; color:#5C6C66;">92, 108, 102</td><td style="padding:10px 8px; color:#5C6C66;">Supporting copy, captions</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#E3E6E2; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Border</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#E3E6E2</td><td style="padding:10px 8px; color:#5C6C66;">227, 230, 226</td><td style="padding:10px 8px; color:#5C6C66;">Card borders, dividers</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2; background:#FAFBFA;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#EAF4F1; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Track</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#EAF4F1</td><td style="padding:10px 8px; color:#5C6C66;">234, 244, 241</td><td style="padding:10px 8px; color:#5C6C66;">Form progress bar track, selected-option fill</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#F1F6F4; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Section tint</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#F1F6F4</td><td style="padding:10px 8px; color:#5C6C66;">241, 246, 244</td><td style="padding:10px 8px; color:#5C6C66;">Alternate section backgrounds (testimonials)</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2; background:#FAFBFA;"><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#E5F3F0; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Light teal tint</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#E5F3F0</td><td style="padding:10px 8px; color:#5C6C66;">229, 243, 240</td><td style="padding:10px 8px; color:#5C6C66;">Badge / icon chip backgrounds</td></tr>
+      <tr><td style="padding:10px 8px;"><span style="display:inline-block; width:26px; height:26px; border-radius:6px; background:#FDECD1; border:1px solid rgba(0,0,0,.08); vertical-align:middle;"></span></td><td style="padding:10px 8px; font-weight:600; color:#16211D;">Light amber tint</td><td style="padding:10px 8px; font-family:'JetBrains Mono',monospace; color:#16211D;">#FDECD1</td><td style="padding:10px 8px; color:#5C6C66;">253, 236, 209</td><td style="padding:10px 8px; color:#5C6C66;">Badge / icon chip backgrounds (step B)</td></tr>
+    </tbody>
+  </table>
+
+  <div style="break-inside:avoid; margin-top:32px;">
+  <h2 style="font-family:'Newsreader',serif; font-weight:600; font-size:22px; letter-spacing:-0.01em; margin:0 0 12px; color:#16211D;">2 · Typography</h2>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:18px; font:400 13.5px/1.5 'Figtree',sans-serif;">
+    <thead>
+      <tr style="background:#16211D;">
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em; border-radius:6px 0 0 0;">Role</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em;">Typeface</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em;">Source</th>
+        <th style="text-align:left; padding:10px 8px; color:#fff; font:600 12px 'Figtree',sans-serif; letter-spacing:.04em; border-radius:0 6px 0 0;">Weights used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:12px 8px; color:#5C6C66;">Headings / display / wizard questions</td><td style="padding:12px 8px; font-family:'Newsreader',serif; font-weight:600; font-size:16px; color:#16211D;">Newsreader</td><td style="padding:12px 8px; color:#5C6C66;">Google Fonts</td><td style="padding:12px 8px; color:#5C6C66;">400, 500, 600, 700</td></tr>
+      <tr><td style="padding:12px 8px; color:#5C6C66;">Body copy / UI / buttons / wordmark</td><td style="padding:12px 8px; font-family:'Figtree',sans-serif; font-weight:600; font-size:16px; color:#16211D;">Figtree</td><td style="padding:12px 8px; color:#5C6C66;">Google Fonts</td><td style="padding:12px 8px; color:#5C6C66;">400, 500, 600, 700</td></tr>
+    </tbody>
+  </table>
+
+  <div style="background:#F1F6F4; border:1px solid #E3E6E2; border-radius:10px; padding:20px 24px; margin-bottom:20px;">
+    <p style="font:500 11px 'Figtree',sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#5C6C66; margin:0 0 12px;">Type scale in use</p>
+    <p style="font-family:'Newsreader',serif; font-weight:600; font-size:32px; line-height:1.1; letter-spacing:-0.02em; color:#16211D; margin:0 0 6px;">H1 - Newsreader 600, 56px on web</p>
+    <p style="font-family:'Newsreader',serif; font-weight:600; font-size:22px; letter-spacing:-0.01em; color:#16211D; margin:0 0 6px;">H2 - Newsreader 600, 36–42px</p>
+    <p style="font-family:'Newsreader',serif; font-weight:600; font-size:16px; color:#16211D; margin:0 0 10px;">H3 - Newsreader 600, 22–23px</p>
+    <p style="font-family:'Figtree',sans-serif; font-size:15px; line-height:1.6; color:#16211D; margin:0 0 6px;">Body - Figtree 400, 16–19px, 1.5–1.6 line-height</p>
+    <p style="font-family:'Figtree',sans-serif; font-weight:700; font-size:14px; color:#16211D; margin:0;">Nav / buttons / labels - Figtree 600–700, 13–16px</p>
+  </div>
+
+  <div style="background:#0E241f; background:#16211D; border-radius:10px; padding:18px 22px; margin-bottom:8px;">
+    <p style="font:500 11px 'Figtree',sans-serif; letter-spacing:.08em; text-transform:uppercase; color:#5FB9AC; margin:0 0 8px;">Google Fonts import</p>
+    <code style="display:block; font:500 11.5px/1.6 'JetBrains Mono',monospace; color:#EAF4F1; white-space:pre-wrap; word-break:break-all;">&lt;link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</code>
+  </div>
+  </div>
+
+  <div style="break-inside:avoid; margin-top:34px;">
+  <h2 style="font-family:'Newsreader',serif; font-weight:600; font-size:22px; letter-spacing:-0.01em; margin:0 0 12px; color:#16211D;">3 · Logo</h2>
+  <div style="display:flex; align-items:center; gap:28px; margin-bottom:16px;">
+    <div style="display:flex; gap:6px;">
+      <span style="width:52px;height:52px;border-radius:13px;background:#5FB9AC;color:#fff;display:flex;align-items:center;justify-content:center;font:800 26px 'Figtree',sans-serif;">M</span>
+      <span style="width:52px;height:52px;border-radius:13px;background:#0E8C7A;color:#fff;display:flex;align-items:center;justify-content:center;font:800 26px 'Figtree',sans-serif;">D</span>
+      <span style="width:52px;height:52px;border-radius:13px;background:#F5A623;color:#fff;display:flex;align-items:center;justify-content:center;font:800 26px 'Figtree',sans-serif;">S</span>
+    </div>
+    <span style="font:700 30px 'Figtree',sans-serif; letter-spacing:-0.02em; color:#16211D;">My Debt Sort</span>
+  </div>
+  <table style="width:100%; border-collapse:collapse; font:400 13.5px/1.5 'Figtree',sans-serif; margin-bottom:8px;">
+    <tbody>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:8px 8px; width:120px; color:#5C6C66;">Blocks</td><td style="padding:8px 8px; color:#16211D;">Three rounded-square blocks reading <strong>M · D · S</strong>, straight - no tilt/rotation. ~30–52px, corner radius ≈ 25% of block size, white letters in Figtree 800 (extra-bold).</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:8px 8px; color:#5C6C66;">Block colours</td><td style="padding:8px 8px; color:#16211D;">M → #5FB9AC &nbsp;·&nbsp; D → #0E8C7A &nbsp;·&nbsp; S → #F5A623</td></tr>
+      <tr><td style="padding:8px 8px; color:#5C6C66;">Wordmark</td><td style="padding:8px 8px; color:#16211D;">"My Debt Sort" set in Figtree 700, -0.02em letter-spacing, colour #16211D (or white on dark backgrounds).</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div style="break-inside:avoid; margin-top:34px;">
+  <h2 style="font-family:'Newsreader',serif; font-weight:600; font-size:22px; letter-spacing:-0.01em; margin:0 0 12px; color:#16211D;">4 · Corner radius &amp; elevation</h2>
+  <table style="width:100%; border-collapse:collapse; font:400 13.5px/1.5 'Figtree',sans-serif;">
+    <tbody>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:8px 8px; width:200px; color:#5C6C66;">Cards / sections</td><td style="padding:8px 8px; color:#16211D;">22–24px border radius</td></tr>
+      <tr style="border-bottom:1px solid #E3E6E2;"><td style="padding:8px 8px; color:#5C6C66;">Buttons / pills</td><td style="padding:8px 8px; color:#16211D;">12–14px radius (fully rounded pill for nav CTA and tags)</td></tr>
+      <tr><td style="padding:8px 8px; color:#5C6C66;">Form card shadow</td><td style="padding:8px 8px; color:#16211D; font-family:'JetBrains Mono',monospace; font-size:12px;">0 28px 70px -34px rgba(90,70,50,0.55)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p style="margin-top:44px; padding-top:16px; border-top:1px solid #E3E6E2; font:400 12px 'Figtree',sans-serif; color:#5C6C66;">Reference build: <em>My Debt Sort - Brand Spec.dc.html</em> / <em>final.html</em> - the live page is the single source of truth; pull exact values from its CSS if anything above is ambiguous.</p>
+
+</x-import>
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
