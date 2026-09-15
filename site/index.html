@@ -45,7 +45,7 @@
 <div id="mf" style="width:100%; background:#FFFFFF; color:#16211D; font-family:'Figtree',sans-serif; overflow:hidden;">
 
   <!-- NAV -->
-  <header style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; max-width:1180px; margin:0 auto;">
+  <header class="site-header" style="display:flex; align-items:center; justify-content:space-between; padding:22px 56px; max-width:1180px; margin:0 auto;">
     <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
       <div style="display:flex; gap:5px;">
         <span style="width:34px;height:34px;border-radius:9px;background:#5FB9AC;color:#fff;display:flex;align-items:center;justify-content:center;font:800 18px 'Figtree';box-shadow:inset 0 -3px 0 rgba(0,0,0,.14);">M</span>
@@ -54,7 +54,10 @@
       </div>
       <span style="font:700 21px 'Figtree'; letter-spacing:-0.02em; white-space:nowrap;">My Debt Sort</span>
     </div>
-    <nav style="display:flex; align-items:center; gap:30px; font-weight:600; font-size:15px;">
+    <button id="nav-toggle" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" style="align-items:center; gap:30px; font-weight:600; font-size:15px;">
       <a href="index.html">Home</a>
       <a href="#mf-how">How it works</a>
       <a href="#mf-faq">FAQs</a>
@@ -63,7 +66,7 @@
   </header>
 
   <!-- HERO -->
-  <section id="mf-form" class="hero-grid" style="max-width:1180px; margin:0 auto; padding:34px 56px 60px; display:grid; gap:56px; align-items:start;">
+  <section id="mf-form" class="hero-grid" style="max-width:1180px; margin:0 auto; padding:0px 56px 60px; display:grid; gap:56px; align-items:start;">
     <div>
       <div style="margin-bottom:20px; max-width:530px; border-radius:20px; overflow:hidden; border:1px solid #E3E6E2;">
         <img src="images/couple.jpg" alt="Couple who have got their debt under control, one holding a card" style="width:100%; height:auto; display:block;">
@@ -247,7 +250,7 @@
   </section>
 
   <!-- ELIGIBILITY -->
-  <section style="max-width:1180px; margin:0 auto; padding:70px 56px; display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:center;">
+  <section class="eligibility-grid" style="max-width:1180px; margin:0 auto; padding:70px 56px; display:grid; gap:52px; align-items:center;">
     <div style="border-radius:24px; overflow:hidden; height:380px; border:1px solid #E3E6E2;">
       <img src="images/family-at-home.jpg" alt="This might be for you if - family at home" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
@@ -274,7 +277,7 @@
   </section>
 
   <!-- ABOUT / HUMAN -->
-  <section style="max-width:1180px; margin:0 auto; padding:78px 56px; display:grid; grid-template-columns:0.95fr 1.05fr; gap:52px; align-items:center;">
+  <section class="about-grid" style="max-width:1180px; margin:0 auto; padding:78px 56px; display:grid; gap:52px; align-items:center;">
     <div>
       <span style="font-weight:600; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#F5A623;">Here when you're ready</span>
       <h2 style="font-family:'Newsreader',serif; font-weight:600; font-size:38px; letter-spacing:-0.02em; margin:10px 0 18px;">You do not have to deal with debt on your own</h2>
@@ -336,5 +339,23 @@
 </div>
 
 <script src="quiz.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.getElementById('nav-toggle');
+    var nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.classList.toggle('open', open);
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.classList.remove('open');
+      });
+    });
+  });
+</script>
 </body>
 </html>
